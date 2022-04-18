@@ -20,7 +20,7 @@ public class OnBoarding extends AppCompatActivity {
 
     public String[] judul_array ={"Selamat Datang di Benkol !",
             "Temukan Bengkel didekatmu",
-            "Montir akan segera datang !"};
+            "Montir akan segera datang Hello world!"};
 
     public String[] deskripsi_array = {
             "Aplikasi yang bikin perawatan atau service kendaraan kamu lebih mudah, siap melayani kamu dimanapun dan kapanpun"
