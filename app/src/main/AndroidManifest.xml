@@ -11,7 +11,8 @@
         android:theme="@style/Theme.BenKol">
         <activity
             android:name=".OnBoarding"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true"
