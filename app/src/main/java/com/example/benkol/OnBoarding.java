@@ -87,10 +87,6 @@ public class OnBoarding extends AppCompatActivity {
     {
         ViewPager viewPager = findViewById(R.id.viewPager);
 
-
-
-
-
         MyViewPagerAdapter myViewPagerAdapter = new MyViewPagerAdapter();
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
