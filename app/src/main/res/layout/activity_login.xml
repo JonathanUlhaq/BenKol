@@ -53,10 +53,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="14dp"
         android:id="@+id/button"
+        android:onClick="OTP"
         android:layout_width="match_parent"
-        android:background="@drawable/button"
         android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:height="60dp"
         android:text="Send OTP"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
