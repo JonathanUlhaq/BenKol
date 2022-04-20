@@ -10,9 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BenKol">
         <activity
+            android:name=".Login"
+            android:exported="false"
+            android:theme="@style/Theme.BenkolLogin"/>
+        <activity
             android:name=".OnBoarding"
+<<<<<<< Updated upstream
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="true">
+=======
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+>>>>>>> Stashed changes
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

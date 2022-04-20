@@ -5,11 +5,14 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -17,6 +20,7 @@ import android.widget.TextView;
 public class OnBoarding extends AppCompatActivity {
 
     public static final int max = 3;
+    Button login,register;
 
     public String[] judul_array ={"Selamat Datang di Benkol !",
             "Temukan Bengkel didekatmu",
@@ -39,6 +43,16 @@ public class OnBoarding extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.onboarding_activity);
         Komponen();
+
+        login = findViewById(R.id.login);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent intent = new Intent(OnBoarding.this, Login.class);
+            startActivity(intent);
+            }
+        });
     }
 
 
