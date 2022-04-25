@@ -43,11 +43,20 @@ public class OnBoarding extends AppCompatActivity {
         setContentView(R.layout.onboarding_activity);
         Komponen();
         login = findViewById(R.id.login);
+        register = findViewById(R.id.register);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(OnBoarding.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OnBoarding.this, Register.class);
                 startActivity(intent);
             }
         });

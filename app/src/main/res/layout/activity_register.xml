@@ -6,7 +6,7 @@
     android:background="#FFFF"
     android:padding="40dp"
     android:layout_height="match_parent"
-    tools:context="Register">
+    tools:context=".Register">
 
     <ImageView
         android:id="@+id/imagelogo"
@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagelogo"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/outlinedTextField1"
@@ -95,72 +95,44 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField4"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.700"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/outlinedTextField3"
-        app:layout_constraintVertical_bias="0.082"
-        app:startIconDrawable="@drawable/password">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="text" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField5"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.070"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/outlinedTextField4"
-        app:layout_constraintVertical_bias="0.100"
-        app:startIconDrawable="@drawable/password">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Konfirmasi Password"
-            android:inputType="text" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="201dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/button"
-        android:fontFamily="@font/poppinssemibbold"
-        android:padding="12dp"
+        android:autoSizeTextType="uniform"
         android:text="Register"
-        android:textColor="#FFF"
-        android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@id/outlinedTextField5"
-        tools:layout_editor_absoluteX="83dp"
-        tools:ignore="MissingConstraints" />
+        app:cornerRadius="12dp"
+        android:onClick="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField3"
+        app:layout_constraintVertical_bias="0.226" />
 
     <LinearLayout
-
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:layout_constraintVertical_bias="0.25">
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Sudah punya akun ?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Login"
+            android:id="@+id/login"
+            android:textColor="@color/biru" />
 
     </LinearLayout>
 
