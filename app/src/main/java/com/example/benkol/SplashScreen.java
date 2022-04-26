@@ -9,7 +9,7 @@ import android.os.Handler;
 import android.widget.ProgressBar;
 
 public class SplashScreen extends AppCompatActivity {
-    private static final int SPLASH_TIME = 3*1000;
+    private static final int SPLASH_TIME = 2*1000;
     ProgressBar prg;
 
     @SuppressLint({"NewApi", "Range"})
