@@ -37,8 +37,8 @@ public class Otp extends AppCompatActivity {
         konfirmasi = findViewById(R.id.konfirmasi);
         deskripsi = findViewById(R.id.deskripsi);
         simbol = findViewById(R.id.simbol);
-        konfirmasi.setText("Registrasi Berhasil !");
-        deskripsi.setText("Yuk langsung aja login");
+        konfirmasi.setText("Pesan Berhasil dikirim Ulang");
+        deskripsi.setText("Cek Pesan Kamu");
         simbol.setImageResource(R.drawable.ic_sms_check);
 
         new Handler().postDelayed(new Runnable() {
