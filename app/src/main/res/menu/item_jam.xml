@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dropdown_menu5"
+        android:title="Servis Bulanan:               Rp. 15.000"
+        />
+    <item
+        android:id="@+id/dropdown_menu6"
+        android:title="Ganti Oli:                           Rp. 12.0000"/>
+    <item
+        android:id="@+id/dropdown_menu7"
+        android:title="Ganti Aki:                          Rp. 12.000"/>
+
+    <item
+        android:id="@+id/dropdown_menu8"
+        android:title="Tambal Ban/Tubles:       Rp. 20.000"/>
+
+
+    <item
+        android:id="@+id/dropdown_menu9"
+        android:title="Ganti Kampas Rem:        Rp. 85.000"/>
+
+    <item
+        android:id="@+id/dropdown_menu10"
+        android:title="Ganti Busi:                         Rp. 85.000"/>
+
+
+
+</menu>

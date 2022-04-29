@@ -26,10 +26,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="20sp"
+          android:textStyle="bold"
             android:layout_marginBottom="20dp"
             android:autoSizeTextType="uniform"
-            android:fontFamily="@font/poppinssemibbold"
+
             android:text="Login Berhasil"
             android:textColor="@color/biru" />
 
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppinslight"
+
             android:layout_height="wrap_content" />
 
 

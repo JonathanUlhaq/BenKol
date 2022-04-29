@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dropdown_menu1"
+        android:title="Senin:        06:00 - 17:00"
+        />
+    <item
+        android:id="@+id/dropdown_menu2"
+        android:title="Selasa:      06:00 - 17:00"/>
+    <item
+        android:id="@+id/dropdown_menu3"
+        android:title="Rabu:         06:00 - 17:00"/>
+
+    <item
+        android:id="@+id/dropdown_menu4"
+        android:title="Kamis:       06:00 - 17:00"/>
+
+
+    <item
+        android:id="@+id/dropdown_menu4"
+        android:title="Jumat:       06:00 - 17:00"/>
+
+    <item
+        android:id="@+id/dropdown_menu4"
+        android:title="Sabtu:        06:00 - 17:00"/>
+
+    <item
+        android:id="@+id/dropdown_menu4"
+        android:title="Minggu:     06:00 - 17:00"/>
+</menu>

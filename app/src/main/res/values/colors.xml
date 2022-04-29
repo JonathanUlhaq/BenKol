@@ -7,6 +7,8 @@
     <color name="biru">#135D86</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="kuning">#46F330</color>
+    <color name="merah">#ED3939</color>
 
 
 </resources>

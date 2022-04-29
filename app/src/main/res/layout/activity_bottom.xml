@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/info_bawah"
+    android:background="@drawable/bottom_background"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="3dp"
+        android:background="@color/biru"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/rating"
+        app:tint="#F9D30D"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/rating"
+        app:tint="#F9D30D" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/rating"
+            app:tint="#F9D30D"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/rating"
+            app:tint="#F9D30D"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/rating2"
+            app:tint="#CFCFCD"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tittle"
+        android:text="Bengkel Tesla"
+        android:fontFamily="@font/poppinssemibbold"
+        android:textColor="@color/biru"
+        android:autoSizeTextType="uniform"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deskripsi"
+        android:text="Melayani Servis Mobil"
+        android:fontFamily="@font/poppinslight"
+        android:textColor="@color/biru"
+        android:autoSizeTextType="uniform"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buka"
+        android:id="@+id/status"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:textColor="#46F330"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        //Montir
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical"
+            >
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:layout_gravity="center"
+               android:orientation="horizontal"
+               android:background="@drawable/rounded">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   app:tint="@color/biru"
+                   android:src="@drawable/montir"/>
+           </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Montir"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinssemibbold"
+                android:textColor="@color/biru"/>
+
+
+        </LinearLayout>
+        //ENd Montir
+
+        //Call
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:tint="@color/biru"
+                    android:src="@drawable/call"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinssemibbold"
+                android:textColor="@color/biru"/>
+
+        </LinearLayout>
+
+
+        //chat
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/chat"
+                    app:tint="@color/biru" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinssemibbold"
+                android:textColor="@color/biru"/>
+
+        </LinearLayout>
+
+        // End Chat
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppinslight"
+        android:textColor="@color/biru"
+        android:text="Jl. Mulawarman Raya No. 34, Pedalangan, Banyumanik, Kota Semarang, Jawa Tengah 666B"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jasa pelayanan bengkel"
+        android:shadowColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/biru"
+        android:drawableEnd="@drawable/info"
+        android:drawableTint="@color/biru"
+        android:textAlignment="viewStart"
+        android:id="@+id/jassa"
+        android:layout_marginBottom="20dp"
+        app:cornerRadius="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jam Operasional"
+        android:shadowColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/biru"
+        android:drawableEnd="@drawable/info"
+        android:drawableTint="@color/biru"
+        android:textAlignment="viewStart"
+        android:id="@+id/jam"
+        android:layout_marginBottom="20dp"
+        app:cornerRadius="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibbold"
+            android:text="Sparepart:"
+            android:textColor="@color/biru"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinslight"
+            android:text="lihat lebih banyak >"
+            android:gravity="end"
+            android:textColor="@color/biru"/>
+    </LinearLayout>
+
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                //oli1
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/sparepart_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/oli1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Shell HX5 15W30"
+                        android:fontFamily="@font/poppinssemibbold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Rp. 45.000"
+                        android:fontFamily="@font/poppinslight"/>
+
+                </LinearLayout>
+            //end oli 1
+
+                //oli2
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/sparepart_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/oli2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="X-TEN 20W50 0,8l "
+                        android:fontFamily="@font/poppinssemibbold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Rp. 36.000"
+                        android:fontFamily="@font/poppinslight"/>
+
+                </LinearLayout>
+                //end oli 2
+
+                //oli3
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/sparepart_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/oli3"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="X-TEN 20W50 0,8l "
+                        android:fontFamily="@font/poppinssemibbold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Rp. 55.000"
+                        android:fontFamily="@font/poppinslight"/>
+
+                </LinearLayout>
+                //end oli 3
+
+                //oli4
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/sparepart_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/oli3"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="X-TEN 20W50 0,8l "
+                        android:fontFamily="@font/poppinssemibbold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Rp. 55.000"
+                        android:fontFamily="@font/poppinslight"/>
+
+                </LinearLayout>
+                //end oli 4
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+</LinearLayout>
