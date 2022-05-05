@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".AkunActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Profil"
+             android:id="@+id/backs"
+             android:fontFamily="@font/poppinssemibbold"
+             android:drawableStart="@drawable/back"/>
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:src="@drawable/edit"
+           android:layout_marginLeft="200dp"
+             />
+
+
+     </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orang_hai"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Angellina Arthanev"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppinssemibbold"
+            android:background="@drawable/outline_akun"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08982728990"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppinssemibbold"
+            android:background="@drawable/outline_akun"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bocahgaming@gmail.com"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppinssemibbold"
+            android:background="@drawable/outline_akun"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/outline_verifikasi">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verifikasi email kamu"
+                android:padding="10dp"
+                android:fontFamily="@font/poppinslight"
+                android:textColor="@color/white"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verifikasi"
+                app:strokeColor="@color/white"
+                android:padding="10dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/white"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
