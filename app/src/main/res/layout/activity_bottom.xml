@@ -132,6 +132,7 @@
 
         //Call
         <LinearLayout
+            android:id="@+id/panggil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -166,6 +167,7 @@
 
         //chat
         <LinearLayout
+            android:id="@+id/chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

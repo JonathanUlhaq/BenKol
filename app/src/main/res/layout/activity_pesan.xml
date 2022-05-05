@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Pesan">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#3FBEC6"
+        android:paddingLeft="10dp"
+        android:paddingTop="40dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/kembali"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/poto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/kembali"
+            android:src="@drawable/orang" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/poto"
+            android:fontFamily="@font/poppinssemibbold"
+            android:text="Nama Bengkel"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/telepon"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:onClick="call"
+            app:srcCompat="@drawable/hp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3FBEC6"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/pesan"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rectangle"
+            android:fontFamily="@font/poppinssemibbold"
+            android:gravity="center_vertical"
+            android:hint="Tulis Pesan Anda"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8A8A8A" />
+
+        <ImageView
+            android:id="@+id/kirim_pesan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/pesan"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

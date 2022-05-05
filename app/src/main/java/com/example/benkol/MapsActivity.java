@@ -3,6 +3,7 @@ package com.example.benkol;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Criteria;
@@ -11,6 +12,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.AndroidException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -58,6 +60,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     LocationRequest mLocationRequest;
     Button jasa,jam;
     TextView tittle,status;
+    LinearLayout chat, panggil;
     private GoogleMap mMap;
 
     @Override
@@ -76,6 +79,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
+
 
     /**
      * Manipulates the map once available.
@@ -290,6 +294,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         status = bottomSheetView.findViewById(R.id.status);
         jasa = bottomSheetView.findViewById(R.id.jassa);
         jam = bottomSheetView.findViewById(R.id.jam);
+        chat = bottomSheetView.findViewById(R.id.chat);
+        panggil = bottomSheetView.findViewById(R.id.panggil);
+
+        panggil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Call.class);
+                startActivity(intent);
+            }
+        });
+
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Pesan.class);
+                startActivity(intent);
+            }
+        });
+
 
         jam.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -324,5 +347,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         bottomSheetDialog.setContentView(bottomSheetView);
         bottomSheetDialog.show();
         return false;
+
+
     }
 }
