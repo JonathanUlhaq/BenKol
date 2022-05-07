@@ -297,7 +297,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         );
         tittle = bottomSheetView.findViewById(R.id.tittle);
         tittle.setText(marker.getTitle());
-
+        chat = bottomSheetView.findViewById(R.id.chat);
         call = bottomSheetView.findViewById(R.id.call);
         status = bottomSheetView.findViewById(R.id.status);
         jasa = bottomSheetView.findViewById(R.id.jassa);
@@ -307,6 +307,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MapsActivity.this,Call.class);
+                startActivity(intent);
+            }
+        });
+
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MapsActivity.this,Pesan.class);
                 startActivity(intent);
             }
         });
