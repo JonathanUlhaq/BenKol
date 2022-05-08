@@ -8,12 +8,46 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/back"
-        android:onClick="kembali"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
 
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/back"
+           android:onClick="kembali"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/cart"
+           android:layout_marginLeft="250dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#000000"
+           android:text=""
+           android:id="@+id/counts"/>
+
+
+   </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/biru"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkout"
+        android:visibility="invisible"
+        android:text="Checkout"/>
 
     <GridView
         android:id="@+id/gridView"
@@ -23,6 +57,7 @@
         android:verticalSpacing="6dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 
 
 

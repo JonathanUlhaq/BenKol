@@ -3,17 +3,21 @@ package com.example.benkol;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
     String names[] = {"Shell HX5 15W30","X-TEN 20W50 0,8l ", "X-TEN DOUBLE ESTER","RCA BATT GM5Z-3B","RCA BATT GTZ-5S","RCA BATT GTZ-7S","Aspira Premio R14","IRC Reborn NR87","PIRELLI ANGEL CITY R17"};
     String price [] = {"Rp.60.000","Rp.50.000","Rp.45.000","Rp.120.000","Rp.200.000","Rp.340.000","Rp.250.000","Rp.300.000","Rp.500.000"};
 
+    int i = 0;
+    TextView counts;
+    Button add,checkout;
     List<ItemsModel> itemsList =new ArrayList<>();
 
     GridView gridView;
@@ -126,21 +133,51 @@ public class MainActivity extends AppCompatActivity {
             ImageView imageView = view.findViewById(R.id.imageView);
             TextView tvName = view.findViewById(R.id.tvName);
             TextView tvPrice = view.findViewById(R.id.tvPrice);
-
+            add = view.findViewById(R.id.tambah);
+            counts = findViewById(R.id.counts);
+            checkout = findViewById(R.id.checkout);
             imageView.setImageResource(itemsModelListFiltered.get(position).getImage());
             tvName.setText(itemsModelListFiltered.get(position).getName());
             tvPrice.setText(itemsModelListFiltered.get(position).getPrice());
 
-            view.setOnClickListener(new View.OnClickListener() {
+
+            add.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(MainActivity.this,ItemViewActivity.class).putExtra("item",itemsModelListFiltered.get(position)));
+                public void onClick(View view) {
+                    String tambah;
+                    i++;
+                    checkout.setVisibility(View.VISIBLE);
+//                    while(i<= counts.getLineCount())
+//                    {
+//                        i++;
+//                         tambah = Integer.toString(i);
+//                        Log.e("tambah",tambah);
+//                        counts.setText(tambah);
+//
+//                    }
+                    Toast.makeText(MainActivity.this, "Item berhasil ditambah", Toast.LENGTH_SHORT).show();
+                    tambah = Integer.toString(i);
+                    Log.e("tambah",tambah);
+                     counts.setText(tambah);
+
+
+
 
                 }
             });
 
+//            view.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    startActivity(new Intent(MainActivity.this,ItemViewActivity.class).putExtra("item",itemsModelListFiltered.get(position)));
+//
+//                }
+//            });
+
             return view;
         }
+
+
 
         @Override
         public Filter getFilter() {
