@@ -22,6 +22,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+
     int images[] = {R.drawable.oli1, R.drawable.oli2, R.drawable.oli3, R.drawable.aki1, R.drawable.aki2, R.drawable.aki3, R.drawable.ban1, R.drawable.ban2, R.drawable.ban3};
     String names[] = {"Shell HX5 15W30","X-TEN 20W50 0,8l ", "X-TEN DOUBLE ESTER","RCA BATT GM5Z-3B","RCA BATT GTZ-5S","RCA BATT GTZ-7S","Aspira Premio R14","IRC Reborn NR87","PIRELLI ANGEL CITY R17"};
     String price [] = {"Rp.60.000","Rp.50.000","Rp.45.000","Rp.120.000","Rp.200.000","Rp.340.000","Rp.250.000","Rp.300.000","Rp.500.000"};
@@ -82,6 +83,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void kembali(View view)
+    {
+        Intent intent = new Intent(this,MapsActivity.class);
+        startActivity(intent);
     }
 
     public class CustomAdapter extends BaseAdapter implements Filterable {

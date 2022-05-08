@@ -61,7 +61,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     LocationManager locationManagers;
     LocationRequest mLocationRequest;
     Button jasa,jam;
-    TextView tittle,status;
+    TextView tittle,status,sparepart;
     private GoogleMap mMap;
 
     @Override
@@ -299,9 +299,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         tittle.setText(marker.getTitle());
         chat = bottomSheetView.findViewById(R.id.chat);
         call = bottomSheetView.findViewById(R.id.call);
+        sparepart = bottomSheetView.findViewById(R.id.sparepart);
         status = bottomSheetView.findViewById(R.id.status);
         jasa = bottomSheetView.findViewById(R.id.jassa);
         jam = bottomSheetView.findViewById(R.id.jam);
+
+        sparepart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MapsActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         call.setOnClickListener(new View.OnClickListener() {
             @Override

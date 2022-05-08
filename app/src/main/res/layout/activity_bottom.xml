@@ -258,6 +258,7 @@
             android:fontFamily="@font/poppinslight"
             android:text="lihat lebih banyak >"
             android:gravity="end"
+            android:id="@+id/sparepart"
             android:textColor="@color/biru"/>
     </LinearLayout>
 
