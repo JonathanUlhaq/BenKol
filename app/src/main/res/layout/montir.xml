@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/monter"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+
+    <View
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/biru"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Montirmu Sedang dalam perjalanan"
+        android:fontFamily="@font/poppinssemibbold"
+        android:textColor="@color/biru"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Montir menuju lokasi kamu"
+        android:fontFamily="@font/poppinslight"
+        android:textColor="#5D889F"
+      />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/biru"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orang"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Montirmu"
+                android:fontFamily="@font/poppinssemibbold"
+                android:textColor="@color/biru"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanos Salamah"
+                android:fontFamily="@font/poppinslight"
+                android:textColor="@color/biru"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/kontak"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/call"
+            app:tint="@color/biru" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/pesan"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/pesaan"
+            app:tint="@color/biru" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="2dp"
+
+        android:background="@color/biru"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:tint="@color/biru"
+            android:src="@drawable/lokasi"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Bengkel:"
+                android:textColor="@color/biru"
+                android:fontFamily="@font/poppinssemibbold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jl. Pahlawan 15, Madiun"
+                android:textColor="@color/biru"
+                android:fontFamily="@font/poppinslight"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_height="30dp"
+
+        android:background="@color/biru"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:tint="@color/biru"
+            android:src="@drawable/current"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Bengkel:"
+                android:textColor="@color/biru"
+                android:fontFamily="@font/poppinssemibbold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jl. Pahlawan 15, Madiun"
+                android:textColor="@color/biru"
+                android:fontFamily="@font/poppinslight"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

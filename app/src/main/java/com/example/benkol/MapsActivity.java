@@ -10,6 +10,7 @@ import android.location.Criteria;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
+import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -41,6 +42,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.benkol.MapsActivity;
+import com.google.android.gms.maps.model.Polygon;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.io.IOException;
@@ -56,7 +60,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     GoogleApiClient mGoogleApiClient;
     Location mLastLocation;
     ImageView akun;
-    LinearLayout call,chat;
+    LinearLayout call,chat,montir;
     Marker mCurrLocationMarker;
     LocationManager locationManagers;
     LocationRequest mLocationRequest;
@@ -289,20 +293,102 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public boolean onMarkerClick(Marker marker) {
 
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
+        BottomSheetDialog dialogue = new BottomSheetDialog(
                 this,R.style.BottomSheetDialogTheme
         );
-        View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(
+        View botttom = LayoutInflater.from(getApplicationContext()).inflate(
                 R.layout.activity_bottom, (LinearLayout) findViewById(R.id.info_bawah)
         );
-        tittle = bottomSheetView.findViewById(R.id.tittle);
+        tittle = botttom.findViewById(R.id.tittle);
         tittle.setText(marker.getTitle());
-        chat = bottomSheetView.findViewById(R.id.chat);
-        call = bottomSheetView.findViewById(R.id.call);
-        sparepart = bottomSheetView.findViewById(R.id.sparepart);
-        status = bottomSheetView.findViewById(R.id.status);
-        jasa = bottomSheetView.findViewById(R.id.jassa);
-        jam = bottomSheetView.findViewById(R.id.jam);
+        chat = botttom.findViewById(R.id.chat);
+        call = botttom.findViewById(R.id.call);
+        sparepart = botttom.findViewById(R.id.sparepart);
+        status = botttom.findViewById(R.id.status);
+        jasa = botttom.findViewById(R.id.jassa);
+        jam = botttom.findViewById(R.id.jam);
+        montir = botttom.findViewById(R.id.montir);
+
+        montir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
+                        MapsActivity.this,R.style.BottomSheetDialogTheme
+                );
+                View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(
+                        R.layout.dialog, (LinearLayout) findViewById(R.id.konfirmasis)
+                );
+
+                bottomSheetDialog.setContentView(bottomSheetView);
+                bottomSheetDialog.show();
+
+                Button lanjut,call;
+
+                call = bottomSheetView.findViewById(R.id.call);
+                lanjut = bottomSheetView.findViewById(R.id.lanjut);
+
+                call.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MapsActivity.this,Call.class);
+                        startActivity(intent);
+                    }
+                });
+
+                lanjut.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
+                                MapsActivity.this,R.style.BottomSheetDialogTheme
+                        );
+                        View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(
+                                R.layout.montir, (LinearLayout) findViewById(R.id.monter)
+                        );
+
+                        bottomSheetDialog.setContentView(bottomSheetView);
+                        bottomSheetDialog.show();
+                        dialogue.cancel();
+
+                        ImageView kontak,pesan;
+
+                        kontak = bottomSheetView.findViewById(R.id.kontak);
+                        pesan = bottomSheetView.findViewById(R.id.pesan);
+                        kontak.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(MapsActivity.this, Call.class);
+                                startActivity(intent);
+                            }
+                        });
+
+                        pesan.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(MapsActivity.this, Pesan.class);
+                                startActivity(intent);
+                            }
+                        });
+
+
+                        mMap.addMarker(new MarkerOptions()
+                                .position(marker.getPosition())
+                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.montier)));
+
+                        @SuppressLint("MissingPermission")
+
+
+                        Polyline polyline = mMap.addPolyline(new PolylineOptions()
+                        .add(new LatLng(-7.655,111.333),marker.getPosition())
+                        .width(5)
+                        .color(R.color.biru));
+
+
+                    }
+                });
+
+            }
+        });
 
         sparepart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -358,8 +444,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             status.setTextColor(getResources().getColor(R.color.merah));
         }
 
-        bottomSheetDialog.setContentView(bottomSheetView);
-        bottomSheetDialog.show();
+        dialogue.setContentView(botttom);
+        dialogue.show();
         return false;
     }
 }
