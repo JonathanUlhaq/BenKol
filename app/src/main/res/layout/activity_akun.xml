@@ -66,9 +66,20 @@
             android:layout_height="wrap_content"
             android:text="bocahgaming@gmail.com"
             android:padding="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/poppinssemibbold"
             android:background="@drawable/outline_akun"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:padding="20dp"
+            android:textAlignment="textStart"
+            android:backgroundTint="#2F89EA"
+            android:layout_marginBottom="20dp"
+            android:onClick="Back"
+            app:cornerRadius="3dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"

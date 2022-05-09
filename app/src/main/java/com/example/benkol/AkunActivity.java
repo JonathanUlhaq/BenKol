@@ -26,4 +26,11 @@ public class AkunActivity extends AppCompatActivity {
             }
         });
     }
+
+
+    public void Back(View view)
+    {
+        Intent intent = new Intent(this,SplashScreen.class);
+        startActivity(intent);
+    }
 }
