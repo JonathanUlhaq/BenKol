@@ -9,6 +9,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="kuning">#46F330</color>
     <color name="merah">#ED3939</color>
+    <color name="navy">#3FBEC6</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDivider">#ECECEC</color>
 
 
 </resources>

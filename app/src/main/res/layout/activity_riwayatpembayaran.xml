@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiwayatpembayaranActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/back"
+            app:title="Riwayat Transaksi"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="152dp">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="441dp"
+        android:layout_height="86dp"
+        android:src="@drawable/bengkelee"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating"
+        app:tint="#F9D30D"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating"
+        app:tint="#F9D30D"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating"
+        app:tint="#F9D30D"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating2"
+        app:tint="#CFCFCD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating"
+        app:tint="#F9D30D"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Beri rating ke bengkel?"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="( 1 mengecewakan, 5 keren ! )"
+        android:textColor="@color/biru"
+        app:layout_constraintTop_toBottomOf="@+id/rating"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="86dp" />
+
+    <View
+        android:id="@+id/vgaris"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="@color/biru"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="242dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/detail"
+        app:layout_constraintTop_toBottomOf="@+id/vgaris"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnbantuan"
+        android:layout_width="323dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Bantuan"
+        app:layout_constraintTop_toBottomOf="@+id/detail"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <Button
+        android:layout_width="323dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Download Bukti"
+        app:layout_constraintTop_toBottomOf="@+id/btnbantuan"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="45dp" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
