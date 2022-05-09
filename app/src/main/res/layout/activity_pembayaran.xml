@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PembayaranActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/menu"
+        app:navigationIcon="@drawable/back"
+        app:title="Metode Pembayaran"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Metode Lainya"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <ImageView
+        android:id="@+id/dana"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/dana"
+        app:layout_constraintTop_toBottomOf="@+id/topAppBar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Dana"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butoon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butoon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butoon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="617dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butoon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butoon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butoon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butoon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:text="Sambungkan akun mu"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+
+    <ImageView
+        android:id="@+id/gopay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gopay"
+        app:layout_constraintTop_toBottomOf="@+id/dana"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Gopay"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:text="Sambungkan akun mu"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+
+    <ImageView
+        android:id="@+id/shope"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/shoope"
+        app:layout_constraintTop_toBottomOf="@+id/dana"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="28dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="ShoopePay"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:text="Sambungkan akun mu"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <ImageView
+        android:id="@+id/ovo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/ovo"
+        app:layout_constraintTop_toBottomOf="@+id/gopay"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="28dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Ovo"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:text="Sambungkan akun mu"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="E-Money"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <ImageView
+        android:id="@+id/tunai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/tunai"
+        app:layout_constraintTop_toBottomOf="@+id/ovo"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="28dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Tunai"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:text="Siapkan uang pas ya"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <ImageView
+        android:id="@+id/tf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tf"
+        app:layout_constraintTop_toBottomOf="@+id/tunai"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="28dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Transfer Bank"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="520dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:text="Hubungkan Rek. Bank Kamu"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <ImageView
+        android:id="@+id/indomaret"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/indomaret"
+        app:layout_constraintTop_toBottomOf="@+id/tf"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="28dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Indomaret"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="590dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinslight"
+        android:text="Cari Indomaret di sekitar kamu, yuk !"
+        android:textColor="@color/biru"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="617dp" />
+
+    <Button
+        android:layout_width="238dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Bayar"
+        app:layout_constraintTop_toBottomOf="@+id/indomaret"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
