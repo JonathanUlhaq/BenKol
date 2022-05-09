@@ -2,7 +2,9 @@ package com.example.benkol;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class PembayaranActivity extends AppCompatActivity {
 
@@ -13,6 +15,13 @@ public class PembayaranActivity extends AppCompatActivity {
 
 
     }
+
+    public void bayar (View view)
+    {
+        Intent intent = new Intent(this, RiwayatpembayaranActivity.class);
+        startActivity(intent);
+    }
+
 
 
 }

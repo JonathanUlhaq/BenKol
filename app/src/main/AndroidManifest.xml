@@ -15,13 +15,16 @@
         android:theme="@style/Theme.BenKol">
         <activity
             android:name=".BantuancsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.BenkolLogin"/>
         <activity
             android:name=".RiwayatpembayaranActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.BenkolLogin"/>
         <activity
             android:name=".PembayaranActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.BenkolLogin"/>
         <activity
             android:name=".MainActivity"
             android:exported="false"

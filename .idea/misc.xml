@@ -53,8 +53,10 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/drawable/rounded.xml" value="0.124" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/drawable/sparepart_background.xml" value="0.124" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/drawable/telep.xml" value="0.124" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/drawable/whitees.xml" value="0.128" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/acitivity_konfirmasi.xml" value="0.152" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_akun.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_bantuancs.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_bottom.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_call.xml" value="0.13496376811594202" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_item_view.xml" value="0.25416666666666665" />
@@ -62,17 +64,30 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_maps.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_otp.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_pembayaran.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_pesan.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_register.xml" value="0.176" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_riwayatpembayaran.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/app_bar_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/bottom_background.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/checkout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/fragment_gallery.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/fragment_slideshow.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/item_onboarding.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/layout_bottom_belanja.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/loading.xml" value="0.23550724637681159" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/montir.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/nav_header_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/onboarding_activity.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/layout/row_items.xml" value="0.4" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/menu/item_jam.xml" value="0.536" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/menu/item_pelayanan.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BenKol/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.125" />
         <entry key="..\:/benkol/BenKol/app/src/main/res/drawable/back.xml" value="0.387" />
         <entry key="..\:/benkol/BenKol/app/src/main/res/drawable/bottom_background.xml" value="0.315" />
         <entry key="..\:/benkol/BenKol/app/src/main/res/drawable/bottom_background2.xml" value="0.315" />

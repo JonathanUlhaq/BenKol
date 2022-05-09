@@ -35,7 +35,7 @@
         android:orientation="horizontal"
         android:layout_height="wrap_content">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:layout_width="120dp"
             app:civ_circle_background_color="@color/white"
             app:civ_border_width="3dp"

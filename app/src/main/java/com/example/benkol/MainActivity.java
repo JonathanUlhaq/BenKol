@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,11 +16,14 @@ import android.widget.Filterable;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -140,6 +144,30 @@ public class MainActivity extends AppCompatActivity {
             tvName.setText(itemsModelListFiltered.get(position).getName());
             tvPrice.setText(itemsModelListFiltered.get(position).getPrice());
 
+            checkout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
+                            MainActivity.this,R.style.BottomSheetDialogTheme
+                    );
+                    View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(
+                            R.layout.checkout, (LinearLayout) findViewById(R.id.check)
+                    );
+
+                    bottomSheetDialog.setContentView(bottomSheetView);
+                    bottomSheetDialog.show();
+
+                    Button pesan = bottomSheetView.findViewById(R.id.pesan);
+
+                    pesan.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent = new Intent(MainActivity.this, PembayaranActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+                }
+            });
 
             add.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -176,6 +204,7 @@ public class MainActivity extends AppCompatActivity {
 
             return view;
         }
+
 
 
 
