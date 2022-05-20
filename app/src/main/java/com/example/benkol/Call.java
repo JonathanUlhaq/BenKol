@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Call extends AppCompatActivity {
@@ -21,7 +24,9 @@ public class Call extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Call.this,MapsActivity.class);
+                intent.putExtra("TAMPIL",true);
                 startActivity(intent);
+
             }
         });
 

@@ -13,8 +13,10 @@ import android.location.LocationManager;
 import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -46,6 +48,7 @@ import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.IOException;
 import java.util.List;
@@ -65,7 +68,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     LocationManager locationManagers;
     LocationRequest mLocationRequest;
     Button jasa,jam;
+    Boolean tampil;
+    AlphaAnimation animation = new AlphaAnimation(1F,0F);
     TextView tittle,status,sparepart;
+    ImageView endCall;
+//    Bundle bundle = getIntent().getExtras();
     private GoogleMap mMap;
 
     @Override
@@ -91,6 +98,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+
+
     }
 
     /**
@@ -312,6 +323,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         montir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                animation.setDuration(1000);
+                view.startAnimation(animation);
+
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
                         MapsActivity.this,R.style.BottomSheetDialogTheme
                 );
@@ -330,6 +345,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 call.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+
+                        animation.setDuration(1000);
+                        view.startAnimation(animation);
+
                         Intent intent = new Intent(MapsActivity.this,Call.class);
                         startActivity(intent);
                     }
@@ -409,6 +428,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                animation.setDuration(1000);
+                view.startAnimation(animation);
+
                 Intent intent = new Intent(MapsActivity.this,Pesan.class);
                 startActivity(intent);
             }

@@ -5,14 +5,15 @@
     <item>
         <shape  android:shape="oval">
 
-            <solid android:color="#6C6B6B" />
-            <corners android:radius="20dp" />
+            <solid android:color="#ADADAD" />
+            <corners android:radius="7dp" />
 
         </shape>
     </item>
 
     <!-- White Top color -->
-    <item android:bottom="3px">
+    <item android:bottom="5px"
+        android:right="5px">
 
         <shape  android:shape="oval">
 

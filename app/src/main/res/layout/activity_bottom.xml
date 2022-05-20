@@ -218,7 +218,8 @@
         android:layout_height="wrap_content"
         android:text="Jasa pelayanan bengkel"
         android:shadowColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/dropdown_corner"
+        android:padding="10dp"
         android:textColor="@color/biru"
         android:drawableEnd="@drawable/info"
         android:drawableTint="@color/biru"
@@ -232,7 +233,8 @@
         android:layout_height="wrap_content"
         android:text="Jam Operasional"
         android:shadowColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/dropdown_corner"
+        android:padding="10dp"
         android:textColor="@color/biru"
         android:drawableEnd="@drawable/info"
         android:drawableTint="@color/biru"
@@ -281,6 +283,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="30dp"
+                    android:padding="10dp"
                     android:background="@drawable/sparepart_background"
                     android:orientation="vertical">
 
@@ -294,6 +297,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="@color/black"
                         android:text="Shell HX5 15W30"
                         android:fontFamily="@font/poppinssemibbold"/>
 
@@ -302,6 +306,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Rp. 45.000"
+                        android:textColor="@color/black"
                         android:fontFamily="@font/poppinslight"/>
 
                 </LinearLayout>
@@ -312,6 +317,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="30dp"
+                    android:padding="10dp"
                     android:background="@drawable/sparepart_background"
                     android:orientation="vertical">
 
@@ -325,6 +331,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="@color/black"
                         android:text="X-TEN 20W50 0,8l "
                         android:fontFamily="@font/poppinssemibbold"/>
 
@@ -333,6 +340,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Rp. 36.000"
+                        android:textColor="@color/black"
+
                         android:fontFamily="@font/poppinslight"/>
 
                 </LinearLayout>
@@ -343,6 +352,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="30dp"
+                    android:padding="10dp"
                     android:background="@drawable/sparepart_background"
                     android:orientation="vertical">
 
@@ -357,6 +367,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="X-TEN 20W50 0,8l "
+                        android:textColor="@color/black"
                         android:fontFamily="@font/poppinssemibbold"/>
 
                     <TextView
@@ -364,6 +375,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Rp. 55.000"
+                        android:textColor="@color/black"
                         android:fontFamily="@font/poppinslight"/>
 
                 </LinearLayout>
@@ -374,6 +386,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="30dp"
+                    android:padding="10dp"
                     android:background="@drawable/sparepart_background"
                     android:orientation="vertical">
 
@@ -387,6 +400,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="@color/black"
                         android:text="X-TEN 20W50 0,8l "
                         android:fontFamily="@font/poppinssemibbold"/>
 
@@ -395,6 +409,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Rp. 55.000"
+                        android:textColor="@color/black"
                         android:fontFamily="@font/poppinslight"/>
 
                 </LinearLayout>

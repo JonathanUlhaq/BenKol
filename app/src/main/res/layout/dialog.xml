@@ -3,18 +3,23 @@
     android:layout_width="match_parent"
     android:id="@+id/konfirmasis"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/dialog"
+    android:background="@drawable/bottom_background"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
+    android:padding="20dp"
     android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="60dp"
-        android:layout_marginTop="20dp"
-        android:paddingRight="60dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/poppinssemibbold"
+        android:layout_marginTop="50dp"
+        android:paddingRight="20dp"
+        android:textColor="#8E8B8B"
         android:textAlignment="center"
         android:text="Pastikan anda telah menghubungi pihak bengkel dan menyampailkan keluhan kendaraan anda"
     />
@@ -23,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal">
 
         <Button
@@ -30,12 +36,11 @@
             android:layout_height="wrap_content"
             android:text="Lanjut"
             android:id="@+id/lanjut"
-            app:cornerRadius="4dp"
+            android:background="@drawable/montir_button"
             android:textColor="#3FBEC6"
-          android:backgroundTint="@color/white"
-            app:strokeWidth="2dp"
+
             android:layout_marginRight="10dp"
-            app:strokeColor="#3FBEC6"/>
+     />
 
         <Button
             android:layout_width="wrap_content"
@@ -44,6 +49,8 @@
             app:cornerRadius="4dp"
             android:textColor="#FFFF"
             android:id="@+id/call"
+            android:padding="10dp"
+            android:background="@drawable/dropdown_corner"
             android:layout_marginBottom="20dp"
             android:backgroundTint="#3FBEC6"/>
 
