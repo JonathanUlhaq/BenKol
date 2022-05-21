@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppinssemibbold"
         android:text="Pilih kategori Kendala"
-        android:textColor="@color/biru"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.172"
@@ -46,40 +46,219 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppinssemibbold"
         android:text="Masalah pada pesanan"
-        android:textColor="@color/biru"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvkategori"
-        app:layout_constraintVertical_bias="0.013"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints,NotSibling" />
 
-    <ImageView
-        android:id="@+id/imgdetail"
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="552dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Pesanan yang saya terima tidak sesuai"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="532dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Kualitas barang kurang baik"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="512dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Barang rusak"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="492dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Montir menyelesaikan pesanan tanpa dianter"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="472dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Saya menunggu pengiriman terlalu lama"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="452dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Tidak mendapat struk"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/kendala"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Masalah pada Montir"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/psn"
-        app:layout_constraintVertical_bias="0.118"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/tvkategori"
+        app:layout_constraintVertical_bias="0.291"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="400dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Montir Kurang sopan"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="380dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Montir menyelesaikan pesanan tanpa ditunggu"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="360dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Montir berbeda dari aplikasi"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Batalkan laporan mengenai pelayanan montir"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ps1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Masalah pada Montir"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvkategori"
+        app:layout_constraintVertical_bias="0.48"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="288dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Saya belum membayar pesanan ke montir"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="268dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Membayar 2 kali untuk 1 pesanan"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="248dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Saya ingin memberikan tip ke montir"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/btnbantuan"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="323dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="132dp"
-        android:background="@color/biru"
+        android:layout_height="60dp"
+        android:layout_marginBottom="68dp"
+        android:height="60dp"
+        android:fontFamily="@font/poppinssemibbold"
         android:text="Chat dengan CS"
+        android:textSize="18sp"
+        app:cornerRadius="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgdetail"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.366" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
