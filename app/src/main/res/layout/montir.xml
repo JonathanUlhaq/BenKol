@@ -4,9 +4,8 @@
     android:orientation="vertical"
     android:id="@+id/monter"
     android:layout_width="match_parent"
-    android:background="@drawable/dialog"
-    android:paddingLeft="60dp"
-    android:paddingRight="60dp"
+    android:background="@drawable/bottom_background"
+    android:padding="40dp"
     android:layout_gravity="center"
     android:gravity="center"
     android:layout_height="match_parent">
@@ -18,8 +17,8 @@
         android:layout_gravity="center"
         android:layout_height="3dp"
         android:layout_marginTop="20dp"
-        android:background="@color/biru"
-        android:layout_marginBottom="10dp"/>
+        android:background="#6492AC"
+        android:layout_marginBottom="20dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -52,9 +51,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/orang"/>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/foto_bengkel"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -72,7 +73,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thanos Salamah"
+                android:text="Ragnar Lodbrok"
                 android:fontFamily="@font/poppinslight"
                 android:textColor="@color/biru"
                 />
@@ -105,7 +106,7 @@
         android:layout_height="2dp"
 
         android:background="@color/biru"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="20dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -163,10 +164,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             app:tint="@color/biru"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/current"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 

@@ -14,7 +14,7 @@
         android:layout_width="100dp"
         android:layout_gravity="center"
         android:layout_height="3dp"
-        android:background="@color/biru"
+        android:background="#6492AC"
         android:layout_marginBottom="20dp"/>
 
     <LinearLayout

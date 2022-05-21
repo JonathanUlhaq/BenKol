@@ -320,6 +320,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         jam = botttom.findViewById(R.id.jam);
         montir = botttom.findViewById(R.id.montir);
 
+        BottomSheetDialog bottomSheetDialoges = new BottomSheetDialog(
+                MapsActivity.this,R.style.BottomSheetDialogTheme
+        );
+        View bottomSheetViewes = LayoutInflater.from(getApplicationContext()).inflate(
+                R.layout.dialog, (LinearLayout) findViewById(R.id.konfirmasis)
+        );
+
         montir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -327,20 +334,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 animation.setDuration(1000);
                 view.startAnimation(animation);
 
-                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
-                        MapsActivity.this,R.style.BottomSheetDialogTheme
-                );
-                View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(
-                        R.layout.dialog, (LinearLayout) findViewById(R.id.konfirmasis)
-                );
 
-                bottomSheetDialog.setContentView(bottomSheetView);
-                bottomSheetDialog.show();
+
+                bottomSheetDialoges.setContentView(bottomSheetViewes);
+                bottomSheetDialoges.show();
 
                 Button lanjut,call;
 
-                call = bottomSheetView.findViewById(R.id.call);
-                lanjut = bottomSheetView.findViewById(R.id.lanjut);
+                call = bottomSheetViewes.findViewById(R.id.call);
+                lanjut = bottomSheetViewes.findViewById(R.id.lanjut);
 
                 call.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -368,6 +370,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         bottomSheetDialog.setContentView(bottomSheetView);
                         bottomSheetDialog.show();
                         dialogue.cancel();
+                        bottomSheetDialoges.cancel();
 
                         ImageView kontak,pesan;
 
@@ -405,6 +408,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     }
                 });
+
 
             }
         });
