@@ -35,100 +35,50 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintVertical_bias="0.194">
 
     </RelativeLayout>
 
     <ImageView
-        android:layout_width="441dp"
-        android:layout_height="86dp"
-        android:src="@drawable/bengkelee"
+        android:id="@+id/imageView7"
+        android:layout_width="106dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/elip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.107" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
-
-    </LinearLayout>
-
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rating"
-        app:layout_constraintBottom_toTopOf="@+id/rating"
-        app:layout_constraintEnd_toStartOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintVertical_bias="0.0"
-        app:tint="#F9D30D"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rating"
-        app:layout_constraintBottom_toTopOf="@+id/rating"
-        app:layout_constraintEnd_toStartOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintVertical_bias="0.0"
-        app:tint="#F9D30D"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rating"
-        app:layout_constraintBottom_toTopOf="@+id/rating"
-        app:layout_constraintEnd_toStartOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.756"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintVertical_bias="0.0"
-        app:tint="#F9D30D"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rating2"
-        app:layout_constraintBottom_toTopOf="@+id/rating"
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="220dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Bengkel Adi Jaya"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintVertical_bias="0.0"
-        app:tint="#CFCFCD"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rating"
-        app:layout_constraintBottom_toTopOf="@+id/rating"
-        app:layout_constraintEnd_toStartOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.995"
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="220dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Melayani servis motor"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintVertical_bias="0.0"
-        app:tint="#F9D30D"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
+
 
     <TextView
         android:id="@+id/rating"
@@ -139,22 +89,9 @@
         android:textColor="@color/biru"
         app:layout_constraintBottom_toTopOf="@+id/vgaris"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppinssemibbold"
-        android:text="( 1 mengecewakan, 5 keren ! )"
-        android:textColor="@color/biru"
-        app:layout_constraintBottom_toBottomOf="@+id/vgaris"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rating"
+        app:layout_constraintVertical_bias="0.966"
         tools:ignore="MissingConstraints" />
 
     <View
@@ -167,7 +104,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.072"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -181,16 +118,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vgaris"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0.113"
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/button3"
         android:layout_width="323dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:text="Download Bukti"
-        android:onClick="bukti"
         android:background="@color/biru"
+        android:onClick="bukti"
+        android:text="Download Bukti"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
@@ -204,16 +142,34 @@
         android:layout_width="323dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:text="Bantuan"
-        android:onClick="bantuan"
         android:background="@color/biru"
+        android:onClick="bantuan"
+        android:text="Bantuan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="240dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        style="@style/RatingBar"
+        android:rating="0"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,10 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RatingBar;
+import android.widget.Toast;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class RiwayatpembayaranActivity extends AppCompatActivity {
+    RatingBar ratingBar;
+    float myRating=0;
 
     private static final int SPLASH_TIME = 2*1000;
     ProgressBar prg;
@@ -21,6 +25,35 @@ public class RiwayatpembayaranActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_riwayatpembayaran);
+        ratingBar = findViewById(R.id.ratingBar);
+
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+                int rating = (int) v;
+                String message = null;
+
+                myRating = ratingBar.getRating();
+                switch (rating){
+                    case 1:
+                        message = "saya kecewa";
+                        break;
+                    case 2:
+                        message = "saya sedih";
+                        break;
+                    case 3:
+                        message = "Biasa saja";
+                        break;
+                    case 4:
+                        message = "Cukup memuaskan";
+                        break;
+                    case 5:
+                        message = "Sangat memuaskan";
+                        break;
+                }
+                Toast.makeText(RiwayatpembayaranActivity.this, message, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public  void bantuan (View view)
