@@ -21,6 +21,7 @@
             android:layout_width="40dp"
             android:layout_height="50dp"
             android:onClick="back"
+            app:tint="@color/white"
             app:srcCompat="?attr/actionModeCloseDrawable" />
 
         <ImageView
@@ -40,6 +41,7 @@
             android:layout_toEndOf="@+id/poto"
             android:fontFamily="@font/poppinssemibbold"
             android:text="Nama Bengkel"
+            android:textColor="@color/white"
             android:textSize="18dp" />
 
         <ImageView
@@ -49,6 +51,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="30dp"
             android:onClick="call"
+            app:tint="@color/white"
             app:srcCompat="@drawable/hp" />
 
     </RelativeLayout>
@@ -129,9 +132,8 @@
             android:background="@drawable/rectangle"
             android:hint="Tulis pesan anda"
             android:id="@+id/tulis"
-            android:padding="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
+            android:padding="11dp"
+            android:textColorHint="#9C9191" />
 
         <ImageView
             android:id="@+id/sent"
