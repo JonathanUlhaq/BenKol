@@ -7,14 +7,14 @@
     android:paddingTop="30dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:background="#3FBEC6"
+    android:background="@drawable/bottom_background"
     android:id="@+id/check">
 
     <View
         android:layout_width="100dp"
         android:layout_gravity="center"
         android:layout_height="3dp"
-        android:background="@color/white"
+        android:background="#135D86"
         android:layout_marginBottom="20dp"/>
 
     <LinearLayout
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ban1"
             android:background="@drawable/whitees"
-/>
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -39,36 +39,41 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:textColor="#135D86"
                 android:fontFamily="@font/poppinssemibbold"
                 android:text="IRC EXTATOR"
-               />
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:textColor="#135D86"
                 android:fontFamily="@font/poppinslight"
                 android:text="Rp. 212.000"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:textColor="#135D86"
                 android:fontFamily="@font/poppinslight"
                 android:text="Jumlah: 1"/>
 
         </LinearLayout>
 
-
-
-
     </LinearLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="2dp"
+        android:background="#135D86"
+        android:layout_marginBottom="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -88,7 +93,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:textColor="#135D86"
                 android:fontFamily="@font/poppinssemibbold"
                 android:text="BAN HEREX MADIUN"
                 />
@@ -96,40 +101,45 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:textColor="#135D86"
                 android:fontFamily="@font/poppinslight"
                 android:text="Rp. 212.000"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:textColor="#135D86"
                 android:fontFamily="@font/poppinslight"
                 android:text="Jumlah: 1"/>
 
         </LinearLayout>
 
-
-
-
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="3dp"
+        android:background="#135D86"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppinssemibbold"
         android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        android:text="Harga Total: Rp.500.000 "/>
+        android:textColor="#135D86"
+        android:text="Harga Total: Rp.248.000 "/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:cornerRadius="10dp"
+        android:layout_marginBottom="10dp"
         android:id="@+id/pesan"
         android:text="Pesan dan Antar Sekarang"
-        android:backgroundTint="@color/biru"
+        android:background="@drawable/button"
         android:textColor="@color/white"
         android:padding="20dp"/>
 

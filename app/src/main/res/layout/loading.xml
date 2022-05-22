@@ -11,23 +11,27 @@
     android:orientation="vertical"
     android:layout_height="match_parent">
 
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_konfirmasi"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Download Berhasil"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppinssemibbold"
         android:textColor="@color/biru"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_konfirmasi"/>
 
     <ProgressBar
         android:id="@+id/progressBar4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"/>
 
 </LinearLayout>

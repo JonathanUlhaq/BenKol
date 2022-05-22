@@ -34,10 +34,10 @@
             android:textColor="@color/biru" />
 
         <ImageView
+            android:id="@+id/simbol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/simbol"
             android:src="@drawable/ic_konfirmasi" />
 
         <TextView

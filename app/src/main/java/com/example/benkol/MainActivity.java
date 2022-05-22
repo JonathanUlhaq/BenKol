@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.Filter;
@@ -37,8 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
     int i = 0;
     TextView counts;
-    Button add,checkout;
+    ImageView add,remove;
+    Button checkout;
     List<ItemsModel> itemsList =new ArrayList<>();
+    AlphaAnimation animation = new AlphaAnimation(1F,0F);
 
     GridView gridView;
 
@@ -138,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
             TextView tvName = view.findViewById(R.id.tvName);
             TextView tvPrice = view.findViewById(R.id.tvPrice);
             add = view.findViewById(R.id.tambah);
+            remove = view.findViewById(R.id.kurang);
             counts = findViewById(R.id.counts);
             checkout = findViewById(R.id.checkout);
             imageView.setImageResource(itemsModelListFiltered.get(position).getImage());
@@ -147,6 +151,8 @@ public class MainActivity extends AppCompatActivity {
             checkout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    animation.setDuration(1000);
+                    view.startAnimation(animation);
                     BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
                             MainActivity.this,R.style.BottomSheetDialogTheme
                     );
@@ -172,6 +178,8 @@ public class MainActivity extends AppCompatActivity {
             add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    animation.setDuration(1000);
+                    view.startAnimation(animation);
                     String tambah;
                     i++;
                     checkout.setVisibility(View.VISIBLE);
@@ -186,13 +194,25 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Item berhasil ditambah", Toast.LENGTH_SHORT).show();
                     tambah = Integer.toString(i);
                     Log.e("tambah",tambah);
-                     counts.setText(tambah);
-
-
-
+                    counts.setText(tambah);
 
                 }
             });
+
+            remove.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    animation.setDuration(1000);
+                    view.startAnimation(animation);
+                    String kurang;
+                    i--;
+                    Toast.makeText(MainActivity.this,"Item berhasil dikurangi", Toast.LENGTH_SHORT).show();
+                    kurang = Integer.toString(i);
+                    Log.e("kurang",kurang);
+                    counts.setText(kurang);
+                }
+            });
+
 
 //            view.setOnClickListener(new View.OnClickListener() {
 //                @Override

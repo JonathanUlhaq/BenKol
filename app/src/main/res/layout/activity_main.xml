@@ -3,51 +3,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="20dp"
+
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal">
-
-       <ImageView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:src="@drawable/back"
-           android:onClick="kembali"/>
-
-       <ImageView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:src="@drawable/cart"
-           android:layout_marginLeft="250dp"/>
-
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:textColor="#000000"
-           android:text=""
-           android:id="@+id/counts"/>
-
-
-   </LinearLayout>
-
-
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="30dp"
         android:background="@color/biru"
-        android:textColor="@color/white"
-        app:cornerRadius="12dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/checkout"
-        android:visibility="invisible"
-        android:text="Checkout"/>
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back"
+            app:tint="@color/white"
+            android:layout_gravity="center"
+            android:onClick="kembali"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Sparepart"
+            android:fontFamily="@font/poppinslight"
+            android:textSize="14dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adi Jaya"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/poppinssemibbold"
+            android:textSize="20dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cart"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="5dp"
+                android:id="@+id/checkout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:text=""
+                android:gravity="right"
+                android:id="@+id/counts"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
 
     <GridView
         android:id="@+id/gridView"
