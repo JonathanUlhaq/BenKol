@@ -26,21 +26,22 @@
 
         <ImageView
             android:id="@+id/poto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
             android:layout_toEndOf="@+id/kembali"
-            android:src="@drawable/orang" />
+            android:src="@drawable/foto_bengkel" />
 
         <TextView
             android:id="@+id/nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@+id/poto"
             android:fontFamily="@font/poppinssemibbold"
-            android:text="Nama Bengkel"
+            android:text="Adi Jaya Bengkel"
             android:textColor="@color/white"
             android:textSize="18dp" />
 

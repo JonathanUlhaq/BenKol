@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RatingBar;
@@ -18,6 +19,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 public class RiwayatpembayaranActivity extends AppCompatActivity {
     RatingBar ratingBar;
     float myRating=0;
+    AlphaAnimation animation = new AlphaAnimation(1F,0F);
 
     private static final int SPLASH_TIME = 2*1000;
     ProgressBar prg;
@@ -59,6 +61,14 @@ public class RiwayatpembayaranActivity extends AppCompatActivity {
     public  void bantuan (View view)
     {
         Intent intent = new Intent(this, BantuancsActivity.class);
+        startActivity(intent);
+    }
+
+    public void back (View view)
+    {
+        animation.setDuration(1000);
+        view.startAnimation(animation);
+        Intent intent = new Intent(this,PembayaranActivity.class);
         startActivity(intent);
     }
 

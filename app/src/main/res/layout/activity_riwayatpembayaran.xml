@@ -7,24 +7,38 @@
     android:background="@color/white"
     tools:context=".RiwayatpembayaranActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout2"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/biru"
+        app:layout_constraintVertical_bias="0.0">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/topAppBar"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:navigationIcon="@drawable/back"
-            app:title="Riwayat Transaksi"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="0dp" />
-    </com.google.android.material.appbar.AppBarLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:onClick="back"
+            app:tint="@color/white"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibbold"
+            android:text="Riwayat Transaksi"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -46,9 +60,11 @@
         android:layout_marginStart="32dp"
         android:src="@drawable/elip"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintVertical_bias="0.116" />
 
     <TextView
         android:id="@+id/textView16"
@@ -126,7 +142,7 @@
         android:layout_width="323dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:background="@color/biru"
+        android:background="@drawable/button"
         android:onClick="bukti"
         android:text="Download Bukti"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -142,7 +158,7 @@
         android:layout_width="323dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:background="@color/biru"
+        android:background="@drawable/button"
         android:onClick="bantuan"
         android:text="Bantuan"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -164,6 +180,7 @@
         android:numStars="5"
         style="@style/RatingBar"
         android:rating="0"
+        android:progressTint="#FFF200"
         android:stepSize="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
