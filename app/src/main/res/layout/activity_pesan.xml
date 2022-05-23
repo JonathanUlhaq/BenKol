@@ -114,6 +114,20 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
         app:layout_constraintVertical_bias="0.082" />
 
+    <ImageView
+        android:id="@+id/tampil_foto"
+        android:layout_width="120dp"
+        android:padding="5dp"
+        android:visibility="invisible"
+        android:layout_height="250dp"
+        android:background="@drawable/bubble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434" />
+
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
@@ -127,8 +141,8 @@
         tools:layout_editor_absoluteX="0dp">
 
         <EditText
-            android:layout_width="300dp"
-            android:layout_height="45dp"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rectangle"
             android:hint="Tulis pesan anda"
@@ -137,9 +151,18 @@
             android:textColorHint="#9C9191" />
 
         <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/camera"
+            android:id="@+id/cameras"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center" />
+
+        <ImageView
             android:id="@+id/sent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
             android:layout_gravity="right|center"
             android:src="@drawable/send" />
 

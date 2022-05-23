@@ -7,36 +7,35 @@
     android:background="@color/white"
     tools:context=".RiwayatpembayaranActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/biru"
         android:orientation="horizontal"
-        android:padding="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/biru"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back"
+            android:layout_marginLeft="10dp"
             android:onClick="back"
-            app:tint="@color/white"/>
+            android:src="@drawable/back"
+            app:tint="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
             android:fontFamily="@font/poppinssemibbold"
             android:text="Riwayat Transaksi"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/white"/>
-
-
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
@@ -55,19 +54,18 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="106dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="32dp"
-        android:src="@drawable/elip"
+        android:layout_width="100dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="44dp"
+        android:src="@drawable/foto_bengkel"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
-        app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.116" />
+        app:layout_constraintVertical_bias="0.107" />
 
     <TextView
-        android:id="@+id/textView16"
+
+        android:id="@+id/textView2"
         android:layout_width="220dp"
         android:layout_height="26dp"
         android:layout_marginTop="92dp"
@@ -81,7 +79,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView1"
+
         android:layout_width="220dp"
         android:layout_height="26dp"
         android:fontFamily="@font/poppinssemibbold"
@@ -98,16 +96,17 @@
 
     <TextView
         android:id="@+id/rating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="166dp"
+        android:layout_height="29dp"
         android:fontFamily="@font/poppinssemibbold"
         android:text="Beri rating ke bengkel?"
         android:textColor="@color/biru"
         app:layout_constraintBottom_toTopOf="@+id/vgaris"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.966"
+        app:layout_constraintVertical_bias="0.995"
         tools:ignore="MissingConstraints" />
 
     <View
@@ -123,50 +122,332 @@
         app:layout_constraintVertical_bias="0.072"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/detail"
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Rp 236.000"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.981"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vgaris"
-        app:layout_constraintVertical_bias="0.113"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.386" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="323dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/button"
-        android:onClick="bukti"
-        android:text="Download Bukti"
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="IRC EXATO NR88 R-17"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnbantuan"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Rp   12.000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Biaya Pengemasan dari Bengkel"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Harga"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="X-TEN 20W50 0,8l "
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:layout_width="142dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="No. Transaksi"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Total Pembayaran"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <TextView
+        android:layout_width="142dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Jumat, 15 April 2022
+                                15.15 WIB"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Rp 212.000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Rp      5.000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Detail Pesanan"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Biaya Jasa Aplikasi"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Bayar via Tunai"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Rp 248.000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Rp   12.000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Rp      7.000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Detail Pembayaran"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="bkol123456789"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Rp 248.000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="RCA BATT GTZ-5S"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:text="Waktu Transaksi"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vgaris"
+        app:layout_constraintVertical_bias="0.067" />
+
 
     <Button
         android:id="@+id/btnbantuan"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="323dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:height="60dp"
+        android:fontFamily="@font/poppinssemibbold"
         android:onClick="bantuan"
         android:text="Bantuan"
+        android:textSize="18sp"
+        app:cornerRadius="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detail"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="323dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:height="60dp"
+        android:fontFamily="@font/poppinssemibbold"
+        android:onClick="bukti"
+        android:text="Download Bukti"
+        android:textSize="18sp"
+        app:cornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -178,9 +459,8 @@
         android:layout_marginBottom="8dp"
         android:isIndicator="false"
         android:numStars="5"
-        style="@style/RatingBar"
+        android:progressTint="#FFFF00"
         android:rating="0"
-        android:progressTint="#FFF200"
         android:stepSize="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
