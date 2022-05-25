@@ -142,31 +142,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
 
-        LatLng bengkel3 = new LatLng(-7.654, 111.333);
-        googleMap.addMarker(new MarkerOptions()
-                .position(bengkel3)
-                .title("Bengkel Tesla")
-                .flat(false));
-
-        LatLng bengkel2 = new LatLng(-7.654, 111.334);
-        googleMap.addMarker(new MarkerOptions()
-                .position(bengkel2)
-                .title("Bengkel Motor Racing")
-                .flat(true));
-
-        LatLng bengkel1 = new LatLng(-7.654, 111.332);
-        googleMap.addMarker(new MarkerOptions()
-                .position(bengkel1)
-                .title("Bengkel Abadi Amanah")
-        .flat(false));
-
-
-
-//        LatLng bengkel4 = new LatLng(-7.105837, 110.411077);
+//        LatLng bengkel3 = new LatLng(-7.654, 111.333);
 //        googleMap.addMarker(new MarkerOptions()
-//                .position(bengkel4)
+//                .position(bengkel3)
 //                .title("Bengkel Tesla")
 //                .flat(false));
+//
+//        LatLng bengkel2 = new LatLng(-7.654, 111.334);
+//        googleMap.addMarker(new MarkerOptions()
+//                .position(bengkel2)
+//                .title("Bengkel Motor Racing")
+//                .flat(true));
+//
+//        LatLng bengkel1 = new LatLng(-7.654, 111.332);
+//        googleMap.addMarker(new MarkerOptions()
+//                .position(bengkel1)
+//                .title("Bengkel Abadi Amanah")
+//        .flat(false));
+
+
+
+        LatLng bengkel4 = new LatLng(-7.105837, 110.411077);
+        googleMap.addMarker(new MarkerOptions()
+                .position(bengkel4)
+                .title("Bengkel Tesla")
+                .flat(false));
 
     }
 
@@ -411,7 +411,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                                 // PolyLine Jovian
                         Polyline polyline = mMap.addPolyline(new PolylineOptions()
-                        .add(new LatLng(-7.655152,111.333693),marker.getPosition())
+                        .add(new LatLng(-7.105741,110.411007),marker.getPosition())
                         .width(5)
                         .color(R.color.biru));
 
